@@ -17,8 +17,8 @@ print(df.isna().sum())
 df.dropna(subset=["score", "votes", "writer", "country", "runtime"], inplace=True)
 
 print("Printing how many types of rating are there and how many of each of them is there")
-df["rating"]
-df["rating"].value_counts()
+print(df["rating"])
+print(df["rating"].value_counts())
 
 # Dropping the rows with null values of rating
 df.dropna(subset=["rating"], inplace=True)
