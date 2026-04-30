@@ -99,7 +99,7 @@ print(f"The category with highest average IMDb score is {average_genre_score.idx
 # I am doing this because I don't want any director with only one movie which is super-hit to be classified as top director
 movie_count = df["director"].value_counts()
 qualified_directors = movie_count[movie_count > 3].index
-average_director_score = df[df["director"].isin(qualified_directors)].groupby(df["director"])["score"].mean()
+average_director_score = df[df["director"].isin(qualified_directors)].groupby("director")["score"].mean()
 print("Printing top director")
 print(average_director_score.idxmax())
 plt.figure(figsize=(10, 8))
