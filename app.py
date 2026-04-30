@@ -68,7 +68,7 @@ print(df.duplicated().sum())
 df = df.dropna(subset=["star"])
 
 print("Finally printing that if all null values are fixed")
-df.isna().sum()
+print(df.isna().sum())
 
 # Adding new columns
 df["profit"] = df["gross"] - df["budget"]
