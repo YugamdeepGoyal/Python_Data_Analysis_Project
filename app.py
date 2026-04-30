@@ -20,6 +20,7 @@ print("Printing how many types of rating are there and how many of each of them 
 print(df["rating"])
 print(df["rating"].value_counts())
 
+# First I thought that I will fill it with mode but then it might cause some problems as some movies might be restricted for some audience even if they are not incorrect then now I thought of dropping the rows
 # Dropping the rows with null values of rating
 df.dropna(subset=["rating"], inplace=True)
 
