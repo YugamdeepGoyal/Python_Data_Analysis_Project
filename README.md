@@ -78,7 +78,7 @@ pip install numpy pandas matplotlib seaborn
 
 **Run**
 ```bash
-python movies_analysis.py
+python 1025250114.py
 ```
 
 Make sure `movies.csv` is in the same directory as the script.
