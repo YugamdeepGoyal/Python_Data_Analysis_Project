@@ -52,7 +52,7 @@ plt.show()
 df["gross"] = df["gross"].fillna(df["gross"].median())
 
 # For the text data like company we cannot fill it with any data from our side as it is not a rule that which company might have produced this content
-# So to handle these null values I will fill it with UNKNWON
+# So to handle these null values I will fill it with UNKNOWN
 # I cannot leave these values as it is as if I do so they will not be used during plotting or groupby. I don't want to loose data so I will not delete them as well.
 df["company"] = df["company"].fillna("UNKNOWN")
 
@@ -111,16 +111,16 @@ plt.show()
 print(f"The top director with highest average IMDb score is {average_director_score.idxmax()}")
 
 # Does runtime affect scores?
-corelation = df["runtime"].corr(df["score"])
-print("Correaltion between runtime and scroe")
-print(corelation)
+correlation = df["runtime"].corr(df["score"])
+print("Correlation between runtime and score")
+print(correlation)
 
 # As we got 0.4 corr that means correlation is not very strong but still runtime and score are positively correlated
-# sns.regplot(x=df["runtime"], y=df["score"], line_kws={"color": "red", "lw": 4})
-# plt.show()
+sns.regplot(x=df["runtime"], y=df["score"], line_kws={"color": "red", "lw": 4})
+plt.show()
 
 # Do bigger budgets earn more gross?
-print("Correaltion between budget and gross")
+print("Correlation between budget and gross")
 print(df["budget"].corr(df["gross"]))
 
 # This value of corr suggests that they are highly and positively co-related
