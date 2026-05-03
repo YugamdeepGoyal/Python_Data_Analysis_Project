@@ -6,6 +6,7 @@ A data analysis project that explores patterns and trends in movies released bet
 
 ## Dataset Overview
 
+**Source**: Kaggle (https://www.kaggle.com/datasets/danielgrijalvas/movies)
 **File:** `movies.csv`  
 **Rows:** 7,668 movies  
 **Time period:** 1980 – 2020
