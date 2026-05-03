@@ -88,7 +88,8 @@ Make sure `movies.csv` is in the same directory as the script.
 ## Project Structure
 
 ```
-├── movies_analysis.py   # Main analysis script
+├── app.py   # Main analysis script
+├── app.ipynb   # Main analysis script in .ipynb format
 ├── movies.csv           # Dataset
 └── README.md
 ```
