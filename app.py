@@ -142,6 +142,7 @@ plt.show()
 movie_count_per_country = df["country"].value_counts().head(15)  # I am using head although all countries can be displayed but on scale count will not be visible as the count of movies is very less
 
 plt.figure(figsize=(10, 10))
+plt.title("Top 15 countries by movie count from the dataset")
 sns.barplot(y=movie_count_per_country.index, x=movie_count_per_country.values)
 plt.xlabel("movie count")
 plt.ylabel("country")
